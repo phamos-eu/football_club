@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include football_club *.css
+recursive-include football_club *.csv
+recursive-include football_club *.html
+recursive-include football_club *.ico
+recursive-include football_club *.js
+recursive-include football_club *.json
+recursive-include football_club *.md
+recursive-include football_club *.png
+recursive-include football_club *.py
+recursive-include football_club *.svg
+recursive-include football_club *.txt
+recursive-exclude football_club *.pyc
