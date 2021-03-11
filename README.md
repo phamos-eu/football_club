@@ -4,4 +4,4 @@ Football Club App
 
 #### License
 
-MIT
+GNU GPLv3
