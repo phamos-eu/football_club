@@ -1,7 +1,7 @@
 [project]
 name = "football_club"
 authors = [
-    { name = "tueit GmbH", email = "support@tueit.de" },
+    { name = "phamos.eu", email = "support@phamos.eu" },
 ]
 description = "Football Club App"
 requires-python = ">=3.10"

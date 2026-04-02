@@ -4,11 +4,11 @@ from . import __version__ as app_version
 
 app_name = "football_club"
 app_title = "Football Club"
-app_publisher = "tueit GmbH"
+app_publisher = "phamos.eu"
 app_description = "Football Club App"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "support@tueit.de"
+app_email = "support@phamos.eu"
 app_license = "MIT"
 
 # Includes in <head>
