@@ -1,20 +1,28 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
+import re
+from pathlib import Path
 
-with open('requirements.txt') as f:
-	install_requires = f.read().strip().split('\n')
 
 # get version from __version__ variable in football_club/__init__.py
-from football_club import __version__ as version
+def get_version():
+	init_py = Path("football_club/__init__.py")
+	if init_py.exists():
+		content = init_py.read_text()
+		match = re.search(r"^__version__\s*=\s*['\"]([^'\"]*)['\"]", content, re.M)
+		if match:
+			return match.group(1)
+	return "0.1.0"
+
 
 setup(
-	name='football_club',
-	version=version,
-	description='Football Club App',
-	author='tueit GmbH',
-	author_email='support@tueit.de',
+	name="football_club",
+	version=get_version(),
+	description="Football Club App",
+	author="tueit GmbH",
+	author_email="support@tueit.de",
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
-	install_requires=install_requires
+	install_requires=[],
 )
